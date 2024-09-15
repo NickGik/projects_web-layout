@@ -1,0 +1,134 @@
+.header-nav {
+    background-color: $color-gray-light;
+    padding: 8px 0;
+    display: none;
+}
+
+.header-nav__container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__nav {
+    width: 100%;
+}
+.header-nav__ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-row: 10px;
+    // justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-nav__item {
+    &:not(:last-child) {
+        margin-right: 63px;
+    }
+}
+
+.header-nav__link {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-gray;
+    white-space: nowrap;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+    &:focus:not(:active) {
+        color: $color-tertiary;
+    }
+}
+
+.header-nav__btn-user,
+.header-nav__btn-user svg path {
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 27px;
+    fill: $color-primary;
+    transition: fill 0.3s ease, background 0.3s ease;
+
+    &:hover svg path {
+        fill: $color-secondary;
+    }
+
+    &:active,
+    &:active svg path {
+        fill: $color-white;
+        background-color: $color-secondary;
+    }
+
+    &:focus:not(:active) svg path {
+        fill: $color-tertiary;
+    }
+}
+
+.header-nav__btn-basket,
+.header-nav__btn-basket .svg-numb,
+.header-nav__btn-basket .svg-basket {
+    padding: 0;
+    width: 49px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:active {
+        background-color: $color-secondary;
+    }
+
+    & ellipse {
+        fill: $color-orange;
+    }
+
+    & .svg-numb {
+        fill: $color-white;
+        transition: fill 0.3s ease;
+    }
+
+    &:hover .svg-numb {
+        fill: $color-white;
+    }
+    &:active .svg-numb {
+        fill: $color-white;
+    }
+    &:focus .svg-numb {
+        fill: $color-white;
+    }
+
+    & .svg-basket {
+        fill: $color-primary;
+        transition: fill 0.3s ease;
+    }
+
+    &:hover .svg-basket {
+        fill: $color-secondary;
+    }
+    &:active .svg-basket {
+        fill: $color-white;
+    }
+    &:focus:not(:active) .svg-basket {
+        fill: $color-tertiary;
+    }
+
+}
+
+

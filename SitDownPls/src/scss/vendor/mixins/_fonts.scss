@@ -1,0 +1,21 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @at-root {
+      @font-face {
+        font-family: $open-sans;
+        font-weight: $weight;
+        font-style: $style;
+        src:  url('../fonts/#{$file-path}.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: $playfair;
+        font-weight: $weight;
+        font-style: $style;
+        src:  url('../fonts/#{$file-path}.woff2') format('woff2');
+      }
+    }
+  }
+  
+  @include font-face("Open Sans", "OpenSans-Regular", 400, normal);
+  @include font-face("Open Sans", "OpenSans-Bold", 600, bold);
+  @include font-face("Open Sans", "OpenSans-Regular", 700, bold);
+  @include font-face("Playfair Display", "PlayfairDisplay-Bold", 900, Bold);

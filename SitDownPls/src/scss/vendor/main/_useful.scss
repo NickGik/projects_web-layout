@@ -1,0 +1,143 @@
+.userful {
+    margin-bottom: 60px;
+}
+
+.userful__h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-dark;
+    margin-bottom: 26px;
+    position: absolute;
+}
+
+.userful-swiper {
+    width: 100%;
+}
+
+.userful-wrapper {
+    width: 100%;
+
+}
+
+.userful__swiper-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.userful-swiper-btn-wrapper {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 26px;
+}
+
+.userful-swiper-btn-wrapper320 {
+    display: none;
+}
+
+.userful-swiper-buttnom-next,
+.userful-swiper-button-pre {
+    position: static;
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    &::after {
+        display: none;
+    }
+
+}
+
+.userful-swiper-buttnom-next svg, 
+.userful-swiper-button-pre svg {
+    height: 40%;
+    object-fit: contain;
+    transform-origin: center;
+
+    & .userful-swiper-path {
+        stroke: $color-primary;
+    }
+}
+
+.userful-swiper-buttnom-next.swiper-button-disabled, 
+.userful-swiper-button-pre.swiper-button-disabled,
+.uderful-swiper-path.swiper-button-disabled {
+    border-color: $color-gray;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.article-userful {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    // width: 624px;
+    background-color: $color-gray-light;
+    border-radius: 10px;
+}
+
+.article-userful__img {
+    max-width: 100%;
+}
+
+.article-userful-block {
+    display: flex;
+    height: auto;
+    height: 100%;
+    flex-direction: column;
+    padding: 30px 0 30px 30px;
+}
+
+.article-userful-block__text {
+    margin: 0;
+    max-width: 576px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: $color-dark;
+    margin-bottom: 38px;
+}
+
+.article-userful-block__btn {
+    margin: 0;
+    display: block;
+    width: max-content;
+    padding: 19px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 10px;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: auto;
+    transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: $color-white;
+    }
+
+    &:active {
+        background-color: $color-secondary;
+        border-color: $color-primary;
+        color: $color-white;
+    }
+
+    &:focus:not(:active) {
+        background-color: $color-tertiary;
+        border-color: $color-tertiary;
+        color: $color-white;
+    }
+
+}
+

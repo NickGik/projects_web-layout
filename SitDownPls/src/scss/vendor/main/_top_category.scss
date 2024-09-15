@@ -1,0 +1,272 @@
+.top-category {
+    padding: 70px 0 65px 0;
+}
+
+.top-category__h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-dark;
+    margin-bottom: 26px;
+}
+
+.top-category__ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "sofa sofa sofa chair chair chair" "bed bed bollard bollard pew pew";
+    grid-gap: 32px;
+}
+
+.top-category__item {
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    background-color: $color-gray-light;
+    border-radius: 10px;
+}
+
+.top-category__assortment-sofa {
+    grid-area: sofa;
+}
+
+.top-category__assortment-chair {
+    grid-area: chair;
+}
+
+.top-category__assortment-bed {
+    grid-area: bed;
+}
+
+.top-category__assortment-bollard {
+    grid-area: bollard;
+}
+
+.top-category__assortment-pew {
+    grid-area: pew;
+}
+
+.assortment-description {
+    padding-left: 30px;
+}
+
+.assortment-description__ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.assortment-description__li {
+    margin-bottom: 11px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.assortment-description__link {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-gray;
+    margin-bottom: 14px;
+    transition: color 0.3s ease, background 0.3s ease;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+
+    &:focus:not(:active) {
+        color: $color-tertiary;
+    }
+}
+
+.assortment-wrapper__h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: $color-dark;
+    margin-bottom: 30px;
+}
+
+.top-category__img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+.top-category__btn .catalog-circle,
+.top-category__btn .catalog-path,
+.top-category__btn {
+    margin: 0;
+    padding: 0;
+    width: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: $color-primary;
+    cursor: pointer;
+    fill: transparent;
+    margin-top: auto;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 75px;
+        height: 1px;
+        bottom: 1px;
+        left: 0;
+        position: absolute;
+        background-color: $color-primary;
+        transition: background 0.3s ease;
+        opacity: 0;
+    }
+
+    &:hover::before { 
+        background-color: $color-primary;
+        opacity: 1;
+    }
+
+    &:active::before {
+        background-color: $color-primary;
+        opacity: 1;
+    }
+
+    &:focus:not(:active):before {
+        background-color: $color-tertiary;
+        opacity: 1;
+    }
+    
+    &:hover { 
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary;
+    }
+
+    &:focus:not(:active) {
+        color: $color-tertiary;
+    }
+
+    & .catalog-circle  {
+        fill: transparent;
+        stroke: $color-primary;
+        transition: fill 0.3s ease, fill 0.3s ease;
+    }
+    &:hover .catalog-circle {
+        fill: $color-primary;
+        stroke: $color-primary;
+    }
+    &:active .catalog-circle {
+        fill: $color-secondary;
+        stroke: $color-primary;
+    }
+    &:focus:not(:active) .catalog-circle {
+        fill: $color-tertiary;
+        stroke: $color-tertiary;
+    }
+
+    & .catalog-path  {
+        stroke: $color-primary;
+        transition: stroke 0.3s ease
+    }
+
+    &:hover .catalog-path  {
+        stroke: $color-white;
+    }
+
+    &:active .catalog-path  {
+        stroke: $color-white;
+    }
+
+    &:focus:not(:active) .catalog-path  {
+        stroke: $color-white;
+    }
+}
+
+
+.assortment-wrapper__btn .catalog-circle,
+.assortment-wrapper__btn .catalog-path,
+.assortment-wrapper__btn .assortment-wrapper__btn-catalog-span,
+.assortment-wrapper__btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $color-primary;
+    cursor: pointer;
+    fill: transparent;
+    transition: color 0.3s ease;
+    
+    &:hover { 
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary;
+    }
+
+    &:focus:not(:active) {
+        color: $color-tertiary;
+    }
+
+    & .catalog-circle  {
+        fill: transparent;
+        stroke: $color-primary;
+        transition: fill 0.3s ease, fill 0.3s ease;
+    }
+    &:hover .catalog-circle {
+        fill: $color-primary;
+        stroke: $color-primary;
+    }
+    &:active .catalog-circle {
+        fill: $color-secondary;
+        stroke: $color-primary;
+    }
+    &:focus:not(:active) .catalog-circle {
+        fill: $color-tertiary;
+        stroke: $color-tertiary;
+    }
+
+    & .catalog-path  {
+        stroke: $color-primary;
+        transition: stroke 0.3s ease
+    }
+
+    &:hover .catalog-path  {
+        stroke: $color-white;
+    }
+
+    &:active .catalog-path  {
+        stroke: $color-white;
+    }
+
+    &:focus:not(:active) .catalog-pathath  {
+        stroke: $color-white;
+    }
+}
+
+.assortment-wrapper__btn {
+    display: none;
+}

@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+    
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+//for color
+$color-primary: #A65CF0;
+$color-secondary: #C998FB;
+$color-tertiary: #7033AC;
+$color-background: #EAEAEA;
+$color-gray: #999999;
+$color-dark: #333333;
+$color-gray-shadow: #666666;
+$color-gray-light: #F6F6F6;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-accent: #F8EFFF;
+$color-orange: #FF862F;
+$color-yellow: #FFBD59;
+$color-bone:#FFF5D1;
+$color-red: #BB370E;
+//For sizw
+$size-small: 14px;
+$size-medium: 16px;
+$size-large: 18px;
+$size-xlarge: 24px;
+$size-xxlarge: 32px;
+$size-xxxlarge: 48px;
+//For fonts
+$open-sans: 'Open Sans';
+$playfair: 'Playfair Display';
+
+body {
+  font-family: $open-sans, $playfair, Helvetica, sans-serif;
+  background-color: $color-white;
+}
+
+
+.page.stop-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+.container-banner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+
+@import "vendor/mixins/_mixins";
+@import "vendor/mixins/_fonts";
+@import "vendor/_header";
+@import "vendor/_hero";
+@import "vendor/_main";
+@import "vendor/_footer";  
+@import "vendor/el/_header_nav";
+@import "vendor/catalog/_catalog_main";
+@import "vendor/cart/_cart";  
+@import "vendor/cooperation/_cooperation";
+@import "vendor/el/_burger";  
+@import "vendor/_media";  

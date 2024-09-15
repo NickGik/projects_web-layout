@@ -1,0 +1,149 @@
+.footer {
+    width: 100%;
+}
+
+.footer-main {
+    width: 100%;
+    background-color: $color-background;
+    padding: 24px 0 14px 0;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-block {
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 32px;
+}
+
+.info-block__logo-wrapper {
+    width: 187px;
+    height: 27px;
+    margin-bottom: 20px;
+}
+
+.info-block__img {
+    cursor: pointer;
+}
+
+.info-block__ul {
+    width: 140px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    row-gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.info-block__item {
+    width: 30px;
+    height: 30px;
+}
+
+.info-block__item {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.info-block__link,
+.info-block__link svg path {
+    padding: 0;
+    display: flex;
+    // padding: 5px;
+    fill: $color-gray;
+    background-color: transparent;
+    transition: fill 0.3s ease, background 0.3s ease;
+
+    &:hover svg path {
+        fill: $color-primary;
+    }
+
+    &:active,
+    &:active svg path {
+        fill: $color-white;
+        background-color: $color-secondary;
+    }
+
+    &:focus:not(:active) svg path {
+        fill: $color-tertiary;
+    }
+}
+
+.main-content__nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, auto);
+    row-gap: 10px;
+    justify-content: space-between;
+    max-width: 932px;
+    width: 100%;
+}
+
+.main-content__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-content__item {
+    
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &:first-child a {
+        color: $color-dark;
+    }
+}
+
+.main-content__link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-gray;
+    background-color: transparent;
+    padding: 2px 7px;
+    transition: color 0.3s ease, background 0.3s ease;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &:active {
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
+
+    &:focus {
+        color: $color-tertiary;
+    }
+}
+
+.footer-copyrite {
+    width: 100%;
+    background-color: $color-gray-light;
+}
+
+.copyrite-block {
+    width: 100%;
+}
+
+.copyrite-block__copy {
+    margin: 0 auto;
+    width: 130px;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $color-gray;
+}
+

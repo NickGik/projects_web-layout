@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.css">    
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page">
+    
+    @@include("../partials/header.html")
+    @@include("../partials/el/burger.html")
+    @@include("../partials/carts/cart-modal.html")
+    @@include("../partials/carts/cart-modal-d31.html")
+
+    <section class="cart">
+        <h2 hidden><!-- Пустой заголовок --></h2>
+        <div class="container">
+            <nav class="cart__map">
+                <ul class="cart__ul">
+                    <li class="cart__item"><a href="http://localhost:3000/index.html" class="cart__link">Главная</a></li>
+                    <li class="cart__item"><a href="http://localhost:3000/catalog.html" class="cart__link"><span>/</span>Каталог</a></li>
+                    <li class="cart__item"><a href="#" class="cart__link"><span>/</span>Диваны</a></li>
+                    <li class="cart__item"><a href="#" class="cart__link"><span>/</span>Прямые диваны</a></li>
+                    <li class="cart__item"><a href="#" class="cart__link"><span>/</span>D-31</a></li>
+                </ul>
+            </nav>
+            <div class="cart-container">
+                <div class="cart-img-block">
+                    <picture class="cart-img-block__img">
+                        <source class="cart-img-block__img" srcset="img/320px/carts/cart_d-31_01.webp" media="(max-width: 590px)">
+                        <img class="cart__img" src="./img/hige/carts/cart_d-31/cart_d-31_01.webp" alt="Изображение продукта">
+                    </picture>
+                    <div class="cart-img-description">
+                        <div class="cart-img-angle">
+                            <picture class="cart-img-block__img">
+                                <source srcset="img/768px/carts/cart_d-31/d-31_01.webp" media="(max-width: 992px)">
+                                <img class="cart-img-block__img" src="img/hige/carts/cart_d-31/cart_d-31_02.webp" alt="Изображение продукта">
+                            </picture>
+                            <picture class="cart-img-block__img">
+                                <source srcset="img/768px/carts/cart_d-31/d-31_02.webp" media="(max-width: 992px)">
+                                <img class="cart-img-block__img" src="img/hige/carts/cart_d-31/cart_d-31_03.webp" alt="Изображение продукта">
+                            </picture>
+                            <picture class="cart-img-block__img cart-img-block__img-blocked">
+                                <source srcset="img/768px/carts/cart_d-31/d-31_03.webp" media="(max-width: 992px)">
+                                <img class="cart-img-block__img" src="img/hige/carts/cart_d-31/cart_d-31_04.webp" alt="Изображение продукта">
+                            </picture>
+                            <picture class="cart-img-block__img">
+                                <source srcset="img/320px/carts/cart_d-31_04.webp" media="(max-width: 520px)">
+                                <source srcset="img/768px/carts/cart_d-31/d-31_04.webp" media="(max-width: 992px)">
+                                <source srcset="img/hige/carts/cart_d-31/cart_d-31_06.webp" media="(max-width: 1100px)">
+                                <img class="cart-img-block__img" src="img/hige/carts/cart_d-31/cart_d-31_05.webp" alt="Изображение продукта">
+                            </picture>
+                        </div>
+                        <div class="cart-price cart-price-inside">
+                            <p class="cart-price__text">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                                </svg>&nbsp;<span>4,8</span>
+                            </p>
+                            <p class="cart-price__text-h">Диван тканевый прямой “D-31”</p>
+                            <p class="cart-price__text-description">Мини 120 см без ящика Stark синий (Рогожка)</p>
+                            <p class="cart-price__text__p"><span>28 490 руб</span></p>
+                            <button class="cart-price__btn-buy" type="button" aria-label="Кнопка купить">Купить в один клик</button>
+                            <button class="cart-price__btn-basket" type="button" aria-label="Кнопка купить">+Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-price">
+                    <p class="cart-price__text">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.2257 5.28193L10.5089 4.59758L8.40032 0.330127C8.34273 0.213287 8.24799 0.118702 8.13095 0.0612089C7.83742 -0.0834504 7.48074 0.037099 7.33398 0.330127L5.22543 4.59758L0.508622 5.28193C0.378579 5.30047 0.259684 5.36167 0.168654 5.45441C0.0586046 5.56733 -0.00203778 5.71924 5.22879e-05 5.87678C0.00214235 6.03431 0.0667938 6.18457 0.179801 6.29454L3.59248 9.61614L2.78622 14.3064C2.76731 14.4156 2.7794 14.5278 2.82113 14.6304C2.86285 14.733 2.93253 14.8218 3.02228 14.8869C3.11202 14.952 3.21823 14.9906 3.32886 14.9985C3.4395 15.0064 3.55013 14.9831 3.64821 14.9314L7.86715 12.717L12.0861 14.9314C12.2013 14.9926 12.335 15.013 12.4632 14.9908C12.7865 14.9352 13.0038 14.6291 12.9481 14.3064L12.1418 9.61614L15.5545 6.29454C15.6474 6.20367 15.7087 6.08497 15.7273 5.95515C15.7774 5.63059 15.5508 5.33015 15.2257 5.28193Z" fill="#FF862F"/>
+                        </svg>&nbsp;<span>4,8</span>
+                    </p>
+                    <p class="cart-price__text-h">Диван тканевый прямой “D-31”</p>
+                    <p class="cart-price__text-description">Мини 120 см без ящика Stark синий (Рогожка)</p>
+                    <p class="cart-price__p"><span>28 490 руб</span></p>
+                    <button class="cart-price__btn-buy cart-price__btn-buy1" type="button" aria-label="Кнопка купить">Купить в один клик</button>
+                    <button class="cart-price__btn-basket" type="button" aria-label="Кнопка купить">+Добавить в корзину</button>
+                </div>
+                <div class="cart-mechanics">
+                    <p class="cart-mechanics__text-h">Опорный механизм</p>
+                    <p class="cart-mechanics__text">Опорный механизм напоминает пантограф, к которому добавили дополнительную секцию. У опорного дивана сиденье «выпрыгивает» вперёд и вытаскивает вторую часть спального места. Заключительный штрих — опустить спинку.
+                    </p>
+                    <p class="cart-mechanics__text">Этот механизм не портит пол и не боится ковров. Требуется чуть больше силы, чтобы разложить диван, но подросток справится.
+                    </p>
+                    <img class="cart-mechanics__img" src="/img/hige/carts/cart_d-31/d-31_scheme.webp" alt="Изображение принципы механизма товара">
+                </div>
+
+                <ul class="cart-description">
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Гарантия</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">18 месяцев</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Артикул</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">AAA41269004</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Длина</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">163 см</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Высота</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">90 см</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Глубина</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">108 см</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Спальное место</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">200 см х 125 см</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Высота посадки</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">45 см</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Механизм</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Опорный</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Тип обивки</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Рогожка</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Цвет</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Синий</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Наполнитель</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Независимый пружинный блок</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Материал каркаса</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Металл. рама с дерев. латами</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Количество мест</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Двухместные</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Категория</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Прямые тканевые диваны</span></div>
+                    </li>
+                    <li class="cart-description__item">
+                        <span class="cart-description__text-name">Возврат</span>
+                        <span class="cart-description__text-dots"></span> 
+                        <div class="cart-description-data"><span class="cart-description__text-data">Условия</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    @@include("../partials/carts/cart_slider.html")
+    @@include("../partials/footer.html")
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.0.0/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>  

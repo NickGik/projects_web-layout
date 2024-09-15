@@ -1,0 +1,209 @@
+.special {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.special__h2 {
+    margin: 0;
+    display: block;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-dark;
+    margin-bottom: 26px;
+    position: absolute;
+}
+
+.special-swiper {
+    width: 100%;
+}
+
+.special-swiper-btn-wrapper {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 26px;
+}
+
+.special-swiper-btn-wrapper320 {
+    display: none;
+}
+
+.special-swiper-buttnom-next,
+.special-swiper-button-pre {
+    position: static;
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    &::after {
+        display: none;
+    }
+
+}
+
+.special-swiper-buttnom-next svg, 
+.special-swiper-button-pre svg {
+    height: 40%;
+    object-fit: contain;
+    transform-origin: center;
+
+    & .swiper__button__path {
+        stroke: $color-primary;
+    }
+
+    & .swiper__button__path.swiper-button-disabled {
+        stroke: $color-gray;
+    }
+}
+
+.special-swiper-buttnom-next.swiper-button-disabled, 
+.special-swiper-button-pre.swiper-button-disabled,
+.swiper-button__path.swiper-button-disabled {
+    border-color: $color-gray;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.special-swiper-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+}
+.special-article__img-wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.special-article {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+    border-radius: 10px;
+    background-color: $color-gray-light;
+    position: relative;
+
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(6) {
+        width: 23%;
+    }
+
+    &:nth-child(2),
+    &:nth-child(5) {
+        width: 49%;
+        background-repeat: no-repeat;
+        background-position: right 30px bottom 30px;
+    }
+    
+    &:nth-child(2) {
+        background-image: url(../img/hige/main/special_offers/bg_z-44.webp);
+    }
+
+    &:nth-child(5) {
+        background-image: url(../img/hige/main/special_offers/bg_z-85.webp);
+    }
+}
+
+.price-block {
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0; 
+        right: -9px;
+        border-top: 16px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-left: 10px solid $color-orange;;
+    }
+}
+
+.price-block__text-price {
+    margin: 0;
+    padding: 7px 19px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    color: $color-white;
+    background-color: $color-orange;
+    position: relative;
+}
+
+.special-article__img {
+    display: block;
+    margin: 0 auto;
+    margin-top: auto;
+}
+
+.special-article__h3 {
+    margin: 0;
+    max-width: 225px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    color: $color-dark;
+    margin-bottom: 23px;
+}
+
+.special-article__text {
+    margin: 0;
+    margin-bottom: 23px;
+
+    & span:nth-child(1) {
+        color: $color-orange;
+        margin-right: 30px;
+    }
+
+    & span:nth-child(2) {
+        color: $color-gray;
+        text-decoration: line-through;
+        text-decoration-color: $color-gray;
+    }
+}
+
+.special-article__btn {
+    display: block;
+    max-width: max-content;
+    padding: 19px 35px;
+    border-radius: 10px;
+    border: 2px solid $color-primary;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: $color-primary;
+    cursor: pointer;
+    margin-top: auto;
+    transition: color 0.3s ease, background 0.3s ease;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+
+    &:active {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+
+    &:focus:not(:active) {
+        background-color: $color-tertiary;
+        color: $color-white;
+        border-color: $color-tertiary;
+    }
+}
+
+

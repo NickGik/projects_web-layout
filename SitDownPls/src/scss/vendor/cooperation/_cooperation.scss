@@ -1,0 +1,228 @@
+.suppliers {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.suppliers-map__ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+
+.suppliers-map__item {
+    margin: 0;
+}
+    
+.suppliers-map__item:last-child .suppliers-map__link {
+    color: $color-primary;
+}
+
+
+.suppliers-map__item:last-child .catalog-map__link {
+    color: $color-primary;
+}
+
+.suppliers-map__link {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-gray;
+
+    &:hover {
+        color: $color-secondary;
+    }
+    &:active {
+        color: $color-tertiary;
+    }
+    &:focus {
+        color: $color-tertiary;
+    }
+}
+
+.suppliers-map__link  span {
+    padding: 0 8px;
+}
+
+.suppliers {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.suppliers__h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-dark;
+    margin-bottom: 32px;
+}
+
+.suppliers__h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: $color-dark;
+    margin-bottom: 12px;
+}
+
+.suppliers__text {
+    margin: 0;
+    max-width: 842px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $color-gray-shadow;
+}
+
+
+.offer {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.offer__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.offer__item {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.offer__item  svg {
+    min-width: 25px;
+    min-height: 25px;
+    margin-top: 4px;
+    margin-right: 12px;
+}
+
+.offer__h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: $color-dark;
+    margin-bottom: 12px;
+}
+
+.offer__text,
+.opportunity__text {
+    margin: 0;
+    max-width: 624px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $color-gray-shadow;
+}
+
+.opportunity__text-margin {
+    margin-bottom: 12px;
+}
+
+
+.opportunity {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.opportunity__h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: $color-dark;
+    margin-bottom: 12px;
+}
+
+.opportunity__h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $color-orange;
+    margin-bottom: 12px;
+}
+
+.opportunity__text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $color-gray-shadow;
+    margin-bottom: 12px;
+}
+
+
+.guarantees {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.guarantees__h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: $color-dark;
+    margin-bottom: 12px;
+}
+
+.guarantees__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.guarantees__num {
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $color-orange;
+}
+
+.guarantees__item {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.guarantees__item span {
+    margin-right: 12px;
+}
+
+.guarantees__text {
+    margin: 0;
+    max-width: 816px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $color-gray-shadow;
+    margin-bottom: 12px;
+}
+
+.term {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.term__content-block {
+    background-image: url(../img/hige/cooperation/bg_term.webp);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.term__text {
+    margin: 0;
+    padding: 23px 0 23px 100px;
+    max-width: 515px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: $color-dark;
+}

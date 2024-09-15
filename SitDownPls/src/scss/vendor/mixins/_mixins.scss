@@ -1,0 +1,215 @@
+// Переменные для размеров экранов
+$breakpoint-large: 1250px;
+$breakpoint-medium: 992px;
+$breakpoint-small: 740px;
+$breakpoint-xsmall: 590px;
+
+// Миксины для медиазапросов
+@mixin media-query-large {
+  @media screen and (max-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin media-query-medium {
+  @media screen and (max-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin media-query-small {
+  @media screen and (max-width: $breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin media-query-xsmall {
+  @media screen and (max-width: $breakpoint-xsmall) {
+    @content;
+  }
+}
+
+// Размеры для медиазапросов:
+// @mixin size-for-breakpoint($breakpoint, $width, $height: null) {
+//     @media (min-width: $breakpoint) {
+//       @if $height {
+//         height: $height;
+//       }
+//       width: $width;
+//     }
+//   }
+// Отступы для медиазапросов:
+// @mixin margin-for-breakpoint($breakpoint, $value) {
+//   @media (min-width: $breakpoint) {
+//     margin: $value;
+//   }
+// }
+// Флексбоксы для медиазапросов:
+// @mixin flex-for-breakpoint($breakpoint) {
+//   @media (min-width: $breakpoint) {
+//     display: flex;
+//   }
+// }
+//-------------------------------------------------------------------------------------------//
+  
+// Градиентные фоны:
+@mixin gradient-background($color1, $color2) {
+  background-image: linear-gradient(to right, $color1, $color2);
+}
+
+// Анимации:
+@mixin animation($animation-name, $duration, $timing-function, $delay) {
+  animation: $animation-name $duration $timing-function $delay;
+}
+
+// Шрифты:
+@mixin font($font-size, $font-family, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// Box-shadow:
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Трансформации:
+@mixin transform($transforms) {
+  transform: $transforms;
+  -webkit-transform: $transforms;
+}
+
+// Переиспользуемые цвета:
+@mixin color($property, $color) {
+  #{$property}: $color;
+}
+
+// Флексбоксы:
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Ширина и высота элемента:
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Тень текста:
+@mixin text-shadow($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color;
+}
+
+// Очистка обтекания:
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Позиционирование:
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// Отображение элемента:
+@mixin display($display) {
+  display: $display;
+}
+
+// Границы:
+@mixin border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+// Перенос текста:
+@mixin text-wrap {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// Отступы:
+@mixin margin($value) {
+  margin: $value;
+}
+
+// Псевдоэлементы:
+@mixin pseudo-element($content, $position, $styles...) {
+  &::#{$position} {
+    content: $content;
+    @content;
+  }
+}
+
+// Градусы в радианы:
+@function deg-to-rad($degrees) {
+  @return $degrees * 0.0174533;
+}
+
+// Радианы в градусы:
+@function rad-to-deg($radians) {
+  @return $radians * 57.2958;
+}
+
+// Абсолютное позиционирование по центру:
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Переходы:
+@mixin transition($property, $duration, $timing-function) {
+  transition: $property $duration $timing-function;
+}
+
+// Размеры текста для медиазапросов:
+@mixin font-size-for-breakpoint($breakpoint, $size) {
+  @media (min-width: $breakpoint) {
+    font-size: $size;
+  }
+}
+
+// Контейнер для оформления блока с абсолютным позиционированием:
+@mixin absolute-container($position, $top, $right, $bottom, $left) {
+  position: absolute;
+  #{$position}: $top $right $bottom $left;
+}
+
+// Адаптивные изображения:
+@mixin responsive-image($image-path, $width, $height, $media-query) {
+  background-image: url($image-path);
+  background-size: cover;
+  width: $width;
+  height: $height;
+
+  @media #{$media-query} {
+    background-image: none;
+  }
+}
+@mixin vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+// Горизонтальный центр контента:
+@mixin horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+// Размер текста в em:
+@mixin em($size) {
+  font-size: $size
+}

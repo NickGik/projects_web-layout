@@ -1,0 +1,292 @@
+.contacts {
+    width: 100%;
+    padding-bottom: 68px;
+}
+
+.contacts-content {
+    width: 100%;
+    background-image: url(../img/hige/main/contacts/bg_contacts.webp);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.contacts-content__h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-dark;
+    margin-bottom: 9px;
+}
+
+.contacts-content__p {
+    display: inline-block;
+    margin: 0;
+    max-width: 624px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $color-gray-shadow;
+    margin-bottom: 16px;
+}
+
+.contacts-tooltip {
+    display: inline;
+    position: relative;
+}
+
+.contacts-tooltip__marker,
+.contacts-tooltip__marker .st0,
+.contacts-tooltip__marker .st1,
+.contacts-tooltip__marker .st2 {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+
+    & .st0 {
+        fill: $color-orange;
+    }
+    &:hover .st0 {
+        fill: $color-orange;
+    }
+    &:focus .st0 {
+        fill: $color-orange;
+    }
+
+
+    & .st1 {
+        fill: $color-white;
+    }
+    &:hover .st1 {
+        fill: $color-orange;
+    }
+    &:focus .st1 {
+        fill: $color-orange;
+    }
+
+
+    & .st2 {
+        fill: $color-orange;
+    }
+    &:hover .st2 {
+        fill: $color-white;
+    }
+    &:focus .st2 {
+        fill: $color-white;
+    }
+}
+
+
+.contacts-tooltip__text {
+    padding: 5px;
+    width: 167px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+    color: $color-white;
+    background-color: $color-black;
+    position: absolute;
+    top: -60px;
+    left: -70px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+
+    &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: $color-black;
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -6px;
+        left: 71px;
+    }
+}
+
+.contacts-tooltip__marker:hover + .contacts-tooltip__text {
+    opacity: 1;
+}
+
+.contacts-tooltip__marker:focus + .contacts-tooltip__text {
+    opacity: 1;
+}
+
+.contacts-content__form {
+    max-width: 624px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-content__input {
+    width: 100%;
+    padding: 7px  18px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid $color-gray-light;
+    background-color: $color-gray-light;
+    margin-bottom: 30px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+
+    &::placeholder {
+        color:  $color-gray;
+    }
+
+    &:hover {
+        background-color: $color-background;
+        border-color: $color-gray;
+    }
+
+    &:active {
+        background-color: $color-accent;
+        border-color: $color-secondary;
+    }
+
+    &:focus:not(:active) {
+        background-color: $color-gray-light;
+        border-color: $color-gray-light;
+    }
+}
+
+.contacts-content__input-wrapper {
+    position: relative;
+}
+  
+.just-validate-error-label {
+    position: absolute;
+    top: -17px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+  
+.main__contacts__map__form_input.just-validate-error-field,
+.main__description__form__input-text.just-validate-error-field {
+    border-color: $color-red !important;
+}
+
+.just-validate-success-field {
+    border-color: #B8EC64 !important;
+}
+
+.just-validate-error-field {
+    border-color: #FF6972 !important;
+}
+
+.contacts__form__btn {
+    display: block;
+    width: max-content;
+    padding: 16px 35px;
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: border 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+    }
+
+    &:active {
+        background-color: $color-secondary;
+        border-color: $color-tertiary;
+    }
+
+    &:focus:not(:active) {
+        background-color: $color-tertiary;
+        border-color: $color-tertiary;
+    }
+
+    &:disabled {
+        color: $color-gray;
+        background-color: $color-background;
+        border-color: $color-background;
+    }
+}
+
+.contacts-content-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-content-checkbox__label {
+    display: flex;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $color-black;
+    margin-right: 7px;
+}
+
+
+.contacts-content-checkbox__input[type="checkbox"] {
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 1px solid var(--color-white);
+    place-content: center;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+  
+.contacts-content-checkbox__input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    border: 1px solid $color-gray;
+}
+
+
+.contacts-content-checkbox__input[type="checkbox"]:checked::before {
+    background-color: $color-primary;
+    background-image: url(../img/hige/main/contacts/check.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    border: none;
+}
+
+// .contacts-content-checkbox__input[type="checkbox"]:focus {
+//     outline: 3px solid coral; /* Пример стиля для фокуса */
+// }
+
+/* Добавьте этот блок для стилизации фокуса на псевдоэлементе ::before */
+.contacts-content-checkbox__input[type="checkbox"]:focus::before {
+    outline: 2px solid $color-primary; /* Пример стиля для фокуса */
+}
+
+.contacts-content-checkbox__link {
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $color-primary;
+
+    &:hover {
+        color: $color-secondary;
+    }
+
+    &:active {
+        color: $color-secondary;
+    }
+
+    &:focus:not(:active) {
+        color: $color-tertiary;
+    }
+}
+
